@@ -10,9 +10,12 @@
   ],
   "bin": "Allusion.exe",
   "shortcuts": [["Allusion.exe", "Allusion"]],
-  "checkver": "github",
+  "checkver": {
+    "url":"https://githubfast.com/allusion-app/Allusion/releases/latest",
+    "regex": "tag/v([\\w.-]+)"
+
+  },
   "autoupdate": {
-    "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v$version/Allusion-Setup-v$version.exe#/dl.7z"
+    "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v$version/Allusion-Setup-$version.exe#/dl.7z"
   }
 }
- 
