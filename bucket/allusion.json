@@ -1,0 +1,16 @@
+{
+  "homepage": "https://allusion-app.github.io/",
+  "license": "GNU General Public License v3.0",
+  "version": "1.0.0-rc.10",
+  "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v1.0.0-rc.10/Allusion-Setup-1.0.0-rc.10.exe#/dl.7z",
+  "hash": "f6f9e451744c974a92e57a418894826197f5b667851694a27e034285acf58ca1",
+  "bin": "Allusion.exe",
+  "shortcuts": [["Allusion.exe", "Allusion"]],
+  "checkver": {
+    "url": "https://githubfast.com/allusion-app/Allusion/releases/download/",
+    "re": "Allusion-Setup-([\\d.]+).exe#/dl.7z"
+  },
+  "autoupdate": {
+    "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v$version/Allusion-Setup-v$version.exe#/dl.7z"
+  }
+}
