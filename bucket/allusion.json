@@ -4,7 +4,12 @@
     "version": "1.13.1-ruc",
     "url": "https://github.com/RafaUC/Allusion/releases/download/v1.13.1-ruc/AllusionPortable.1.13.1-ruc.exe",
     "hash": "e1e6ea851ab49a43532b494e81951247ce9e980ca0f3491a65f5a05307b27fd6",
-    "bin": "Allusion.exe",
+    "bin": [
+        [
+            "AllusionPortable.1.13.1-ruc.exe",
+            "Allusion"
+        ]
+    ],
     "shortcuts": [
         [
             "AllusionPortable.1.13.1-ruc.exe",
@@ -18,7 +23,10 @@
     "autoupdate": {
         "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
         "bin": [
-            "AllusionPortable.$version.exe"
+            [
+                "AllusionPortable.$version.exe",
+                "Allusion"
+            ]
         ],
         "shortcuts": [
             [
