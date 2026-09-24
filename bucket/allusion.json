@@ -2,12 +2,12 @@
     "homepage": "https://github.com/RafaUC/Allusion",
     "license": "GNU General Public License v3.0",
     "version": "1.13.1-ruc",
-    "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
+    "url": "https://github.com/RafaUC/Allusion/releases/download/v1.13.1-ruc/AllusionPortable.1.13.1-ruc.exe",
     "hash": "e1e6ea851ab49a43532b494e81951247ce9e980ca0f3491a65f5a05307b27fd6",
-    "bin": "AllusionPortable.$version.exe",
+    "bin": "Allusion.exe",
     "shortcuts": [
         [
-            "AllusionPortable.$version.exe",
+            "AllusionPortable.1.13.1-ruc.exe",
             "Allusion"
         ]
     ],
@@ -17,9 +17,14 @@
     },
     "autoupdate": {
         "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
-        "hash": {
-            "url": "https://github.com/RafaUC/Allusion/releases/tag/v$version",
-            "regex": "AllusionPortable\\.$version\\.exe\\s*sha256:([0-9a-fA-F]{64})"
-        }
+        "bin": [
+            "AllusionPortable.$version.exe"
+        ],
+        "shortcuts": [
+            [
+                "AllusionPortable.$version.exe",
+                "Allusion"
+            ]
+        ]
     }
 }
