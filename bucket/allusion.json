@@ -1,25 +1,21 @@
 {
-    "homepage": "https://githubfast.com/allusion-app/Allusion",
+    "homepage": "https://github.com/RafaUC/Allusion",
     "license": "GNU General Public License v3.0",
-    "version": "1.0.0-rc.10",
-    "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v1.0.0-rc.10/Allusion-Setup-1.0.0-rc.10.exe#/dl.7z",
-    "hash": "f6f9e451744c974a92e57a418894826197f5b667851694a27e034285acf58ca1",
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
-    ],
-    "bin": "Allusion.exe",
+    "version": "1.13.1-ruc",
+    "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
+    "hash": "e1e6ea851ab49a43532b494e81951247ce9e980ca0f3491a65f5a05307b27fd6",
+    "bin": "AllusionPortable.$version.exe",
     "shortcuts": [
         [
-            "Allusion.exe",
+            "AllusionPortable.$version.exe",
             "Allusion"
         ]
     ],
+    "persist": "userData",
     "checkver": {
-        "url": "https://githubfast.com/allusion-app/Allusion/releases/latest",
-        "regex": "tag/v([\\w.-]+)"
+        "github": "https://github.com/RafaUC/Allusion"
     },
     "autoupdate": {
-        "url": "https://githubfast.com/allusion-app/Allusion/releases/download/v$version/Allusion-Setup-$version.exe#/dl.7z"
+        "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe"
     }
 }
