@@ -16,6 +16,10 @@
         "github": "https://github.com/RafaUC/Allusion"
     },
     "autoupdate": {
-        "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe"
+        "url": "https://github.com/RafaUC/Allusion/releases/download/v$version/AllusionPortable.$version.exe",
+        "hash": {
+            "url": "https://github.com/RafaUC/Allusion/releases/tag/v$version",
+            "regex": "AllusionPortable\\.$version\\.exe\\s*sha256:([0-9a-fA-F]{64})"
+        }
     }
 }
